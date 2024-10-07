@@ -1,0 +1,26 @@
+
+.sidebar{
+  background-color: #2B1F31;
+  height: 100vh;
+  padding: 1rem;
+  width: 400px;
+}
+
+h1,hr{
+  margin: 0;
+  color: #BEF992;
+}
+
+ul{
+  list-style-type: none;
+  padding: 5px 0;
+  border-radius: 70px;
+  margin: 0;
+
+}
+
+button{
+  width: 100%;
+}
+
+
