@@ -1,18 +1,18 @@
 
 <!-- VERDE -->
-<span *ngIf="status" class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+<span *ngIf="status === statusEnum.Alive" class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
   <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
   {{status}}
 </span>
 
 <!-- ROJO -->
-<span  class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+<span *ngIf="status === statusEnum.Dead"  class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
   <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
   {{status}}
 </span>
 
 <!-- GRIS -->
-<span  class="inline-flex items-center bg-Gray-900 text-Gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-Gray-900 dark:text-Gray-300">
-  <span class="w-2 h-2 me-1 bg-Gray-800 rounded-full"></span>
+<span *ngIf="status === statusEnum.Unknown"  class="inline-flex items-center bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-gray-900 dark:text-gray-300">
+  <span class="w-2 h-2 me-1 bg-gray-500 rounded-full"></span>
   {{status}}
 </span>

@@ -1,12 +1,19 @@
 <div class="home-page">
-
-
-
-  <characters-search-box></characters-search-box>
-
+  <characters-search-box
+    (txtInputValue)="searchCharacterbyName($event)"
+  ></characters-search-box>
 
   <ul>
-    <characters-card [character]="character"  *ngFor="let character of personajes"></characters-card>
+    <characters-card
+      [character]="character"
+      *ngFor="let character of loadCharacters"
+    ></characters-card>
   </ul>
-
+  <div
+    *ngIf="loadCharacters.length === 0"
+    class="mt-2 p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+    role="alert"
+  >
+    <span class="font-medium">Cargando...</span> Ya mismo llegan, se paciente
+  </div>
 </div>

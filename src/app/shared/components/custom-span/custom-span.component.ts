@@ -10,4 +10,6 @@ export class CustomSpanComponent {
   @Input()
   status:Status = Status.Unknown
 
+  statusEnum = Status;
+
 }

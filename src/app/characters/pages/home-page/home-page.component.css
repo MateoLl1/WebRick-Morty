@@ -1,21 +1,19 @@
-.home-page{
+.home-page {
   width: 100%;
   padding: 20px;
   align-items: start;
-
 }
 
-
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-@media (max-width:900px) {
-  ul{
-    grid-template-columns: repeat(1,1fr);
+@media (max-width: 900px) {
+  ul {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

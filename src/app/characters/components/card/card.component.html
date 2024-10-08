@@ -2,28 +2,26 @@
 
 
   <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
+      <a onclick="">
         <img
           class="rounded-t-lg"
           [src]="character.image"
           alt="sin-imagen"
           width="200px"
-
         />
-    </a>
+      </a>
     <div class="p-3">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {{character.name}}
-            </h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {{character.created | date: 'YYYY-MM-dd' }}
-        </p>
-        <shared-span
-          [status]="character.status"
-          >
-        </shared-span>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {{character.name}}
+          </h5>
+
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {{character.created | date: 'YYYY-MM-dd' }}
+      </p>
+      <shared-span
+        [status]="character.status"
+        >
+      </shared-span>
     </div>
   </div>
 
